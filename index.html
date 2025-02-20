@@ -1,23 +1,112 @@
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Ibiyemisi Gbenebor - Brown CS1300 Assignment 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-<div>
-  <h1>Introduction</h1>
-  <p>A dropdown menu is a fundamental UI component that enhances navigation by organizing options efficiently. However, accessibility varies across implementations. This case study explores how dropdown menus function using mouse, keyboard, and touch interactions, analyzing their usability and accessibility. </p>
-</div>
-
-<div>
-  <h1>Introduction</h1>
-  <p>A dropdown menu is a fundamental UI component that enhances navigation by organizing options efficiently. However, accessibility varies across implementations. This case study explores how dropdown menus function using mouse, keyboard, and touch interactions, analyzing their usability and accessibility. </p>
-</div>
-<div>
-  <h1>Part 1</h1>
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRw6Lr-uiXRyllYe-Wz2MPRbice-GtOlXJxbMD7B2z3isqTZdKzymnRv7y4lUhnuF22Du7VyyPwVfHg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-</div>
-<div>
-  <h1>Part 2</h1>
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRw6Lr-uiXRyllYe-Wz2MPRbice-GtOlXJxbMD7B2z3isqTZdKzymnRv7y4lUhnuF22Du7VyyPwVfHg/pubhtml?gid=1745508735&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<h1>Exploring Accessible Drop Down Menus</h1>
+<div class="container-md">
+  <h2>Introduction</h2>
+  <p>A dropdown menu is a fundamental UI component that enhances navigation by organizing options efficiently. However,
+    accessibility varies across implementations. This case study explores how dropdown menus function using mouse,
+    keyboard, and touch interactions, analyzing their usability and accessibility. </p>
 </div>
 
-</body>
+<div class="container-md">
+  <h2>Initial Design</h2>
+  <p>
+    This section showcases the original dropdown menus from <strong>Google’s user profile menu, Apple’s system menu, and
+      ChatGPT’s interface</strong>.
+    By analyzing these designs, I identified key differences in <strong>interaction methods, accessibility features, and
+      usability trade-offs</strong> across platforms.
+  </p>
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <figure>
+        <img src="./screenshots/googe-chrome-user-menu.png" class="img-fluid rounded shadow" alt="Google User Profile Menu">
+        <figcaption class="mt-2">Google User Profile Menu</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure>
+        <img src="./screenshots/apple-menu.png" class="img-fluid rounded shadow" alt="Apple System Menu">
+        <figcaption class="mt-2">Apple System Menu</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure>
+        <img src="./screenshots/chatgpt-mnenu.png" class="img-fluid rounded shadow" alt="ChatGPT Dropdown Menu">
+        <figcaption class="mt-2">ChatGPT Dropdown Menu</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="container-md">
+  <h2>Initial Design Insights</h2>
+  <iframe width="100%" height="600px"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRw6Lr-uiXRyllYe-Wz2MPRbice-GtOlXJxbMD7B2z3isqTZdKzymnRv7y4lUhnuF22Du7VyyPwVfHg/pubhtml?widget=true&amp;headers=false"></iframe>
+</div>
+
+<div class="container-md">
+  <h2>User Interaction</h2>
+  <h3>Initial State Model: Apple Menu</h3>
+  <p>Below, you’ll see two separate state models, each focusing on mouse and keyboard interactions. These diagrams help us visualize how a user navigates through different states when using a dropdown menu.</p>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <figure>
+        <img src="./state-diagrams/original-mouse.png" class="img-fluid rounded shadow" alt="Google User Profile Menu">
+        <figcaption class="mt-2">Mouse</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure>
+        <img src="./state-diagrams/orginal-keyboard.png" class="img-fluid rounded shadow" alt="Apple System Menu">
+        <figcaption class="mt-2">Keyboard</figcaption>
+      </figure>
+    </div>
+  </div>
+  <h3>Updated State Model: Apple Menu</h3>
+  <p>In this redesigned version of the dropdown menu, I’ve added a new state specifically for mouse users—they can now select text within the dropdown options. This additional feature allows users to copy and paste text from the menu, which enhances their ability to search and compare different options. This trade-off aims to improve learnability for mouse users, providing more control and flexibility. However, this new state lacks a similar feature for keyboard users, resulting in a loss of accessibility for those who rely on the keyboard alone. This adjustment highlights the balance between usability for mouse users and accessibility for keyboard users in the dropdown interaction model.</p>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <figure>
+        <img src="./state-diagrams/update-mouse.png" class="img-fluid rounded shadow" alt="Old state design">
+        <figcaption class="mt-2">Mouse</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure>
+        <img src="./state-diagrams/update-keyboard.png" class="img-fluid rounded shadow" alt="New state design">
+        <figcaption class="mt-2">Keyboard</figcaption>
+      </figure>
+    </div>
+</div>
+
+<div class="container-md">
+  <h2>New and Improved Dropdown Menu Design</h2>
+  <p>Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.
+    Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.
+</p>
+  <div class="col-md-4" class="row text-center">
+  <figure>
+    <img src="./state-diagrams/new-deisgn.png" class="img-fluid rounded shadow" alt="New and Improved Design">
+    <figcaption class="mt-2">New Design</figcaption>
+  </figure>
+</div>
+</div>
+
+<div class="container-md">
+  <h2>Reflection</h2>
+  <p>Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.
+      Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.
+  </p>
+</div>
+
+</div>
 </html>
